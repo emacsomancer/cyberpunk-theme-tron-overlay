@@ -32,10 +32,14 @@
 
 
 (let ((class '((class color) (min-colors 89)))
-      ;; Tron palette
-      (tron-blue "#9AD5E9")
+      ;; Tron palette - many colours are actually the same as the cyberpunk colours
+;;    (tron-blue "#9AD5E9")
+;;    (tron-blue "#c4ecf4")
+      (tron-blue "#c5ecfb") ;; ENCOM blue
+      (mcp-red "#b13223") ;; MCP red
+      (pane-blue "#E6FFFF")
       (tron-orange-1 "#ff8c00") ;; DarkOrange
-      (recogniser-yellow "#FBDE2D") ; recogniser yellow
+      (recogniser-yellow "#FFE64D") ; recogniser yellow 
       (cybertron-fg "#dcdccc")
       (cybertron-bg-1 "#2b2b2b")
       (cybertron-bg-05 "#383838")
@@ -101,8 +105,13 @@
       
  (custom-theme-set-faces
   'tron-overlay
-  `(default ((,class (:foreground ,tron-blue :background ,cybertron-black))))
- `(region ((,class (:foreground ,cybertron-black :background ,cybertron-yellow-5))))
+  `(default ((,class (:foreground ,tron-blue :background ,cybertron-black))))   ;;; change default text colour from cyberpunk greyish
+                                                                                ;;; good for distinction between text & commment
+                                                                                ;;; also matches colour used in Tron http://jtnimoy.com/blogs/projects/14881671
+
+ `(region ((,class (:foreground ,cybertron-black :background ,recogniser-yellow))))  ;;; change highlight to recogniser-yellow
+  
+;; `(region ((,class (:foreground ,cybertron-black :background ,cybertron-yellow-5))))
  
 
 
@@ -130,9 +139,16 @@
      `(flycheck-fringe-warning
        ((,class (:foreground ,cybertron-orange-1 :background ,cybertron-yellow-1 :weight bold))))
 
+     ;; search
+        `(isearch ((,class (:foreground ,cybertron-black :background ,recogniser-yellow))))
+        `(isearch-fail ((,class (:background ,mcp-red))))
+        `(lazy-highlight ((,class (:foreground ,cybertron-black :background ,tron-orange-1))))
+
+;; org-mode
       `(org-agenda-calendar-event ((,class (:inherit default :foreground ,cybertron-blue+2))))
       `(org-agenda-calendar-sexp ((,class (:inherit default :foreground ,cybertron-blue+2))))
 
+;; gnus      
       `(gnus-summary-normal-unread ((,class (:foreground ,cybertron-green))))
       `(gnus-summary-high-unread ((,class (:foreground ,cybertron-green))))
       `(gnus-summary-low-unread ((,class (:foreground ,cybertron-green))))      
