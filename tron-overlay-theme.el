@@ -133,6 +133,9 @@
       `(org-agenda-calendar-event ((,class (:inherit default :foreground ,cybertron-blue+2))))
       `(org-agenda-calendar-sexp ((,class (:inherit default :foreground ,cybertron-blue+2))))
 
+      `(gnus-summary-normal-unread ((,class (:foreground ,cybertron-green))))
+      `(gnus-summary-high-unread ((,class (:foreground ,cybertron-green))))
+      `(gnus-summary-low-unread ((,class (:foreground ,cybertron-green))))      
      
   )
 
