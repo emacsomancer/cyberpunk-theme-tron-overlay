@@ -136,7 +136,10 @@
       `(gnus-summary-normal-unread ((,class (:foreground ,cybertron-green))))
       `(gnus-summary-high-unread ((,class (:foreground ,cybertron-green))))
       `(gnus-summary-low-unread ((,class (:foreground ,cybertron-green))))      
-     
+
+      `(gnus-summary-normal-read ((,class (:foreground ,cybertron-grey))))
+      `(gnus-summary-high-read ((,class (:foreground ,cybertron-grey))))
+      `(gnus-summary-low-read ((,class (:foreground ,cybertron-grey))))                                                                    
   )
 
   )
