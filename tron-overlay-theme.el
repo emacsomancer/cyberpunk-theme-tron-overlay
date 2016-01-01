@@ -43,6 +43,7 @@
 
       ;; http://www.colourlovers.com/palette/1526474/Tron
       (wipe-out "#34608D")
+      (wipe-out-light "#58a0e9")
       (tron-blue "#18CAE6")
       (far-away-sky "#D8DAE7")
       (meanwhile "#050D10")
@@ -174,7 +175,7 @@
       `(gnus-summary-low-read ((,class (:foreground ,cybertron-grey))))
 
       `(gnus-group-mail-3 ((,class (:foreground ,tron-blue))))
-      `(gnus-group-mail-3-empty ((,class (:foreground ,wipe-out))))
+      `(gnus-group-mail-3-empty ((,class (:foreground ,wipe-out-light))))
   )
 
   )
