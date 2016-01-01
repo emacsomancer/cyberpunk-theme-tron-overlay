@@ -35,11 +35,27 @@
       ;; Tron palette - many colours are actually the same as the cyberpunk colours
 ;;    (tron-blue "#9AD5E9")
 ;;    (tron-blue "#c4ecf4")
-      (tron-blue "#c5ecfb") ;; ENCOM blue
+
+      (encom-blue "#c5ecfb") ;; ENCOM blue
+      (tron-text "#a3ecd9")
       (mcp-red "#b13223") ;; MCP red
       (pane-blue "#E6FFFF")
+
+      ;; http://www.colourlovers.com/palette/1526474/Tron
+      (wipe-out "#34608D")
+      (tron-blue "#18CAE6")
+      (far-away-sky "#D8DAE7")
+      (meanwhile "#050D10")
+      (dead-baby "#0D0C1C")
+
+      ;; http://www.colourlovers.com/palette/1406402/Tron_Legacy_2
+      (cyan-tron-legacy "#6FC3DF")
+      (basestar "#0C141F")
+      (sweet-yellow "#FFE64D")
+      
       (tron-orange-1 "#ff8c00") ;; DarkOrange
       (recogniser-yellow "#FFE64D") ; recogniser yellow 
+
       (cybertron-fg "#dcdccc")
       (cybertron-bg-1 "#2b2b2b")
       (cybertron-bg-05 "#383838")
@@ -105,7 +121,7 @@
       
  (custom-theme-set-faces
   'tron-overlay
-  `(default ((,class (:foreground ,tron-blue :background ,cybertron-black))))   ;;; change default text colour from cyberpunk greyish
+  `(default ((,class (:foreground ,tron-text :background ,cybertron-black))))   ;;; change default text colour from cyberpunk greyish
                                                                                 ;;; good for distinction between text & commment
                                                                                 ;;; also matches colour used in Tron http://jtnimoy.com/blogs/projects/14881671
 
@@ -155,7 +171,10 @@
 
       `(gnus-summary-normal-read ((,class (:foreground ,cybertron-grey))))
       `(gnus-summary-high-read ((,class (:foreground ,cybertron-grey))))
-      `(gnus-summary-low-read ((,class (:foreground ,cybertron-grey))))                                                                    
+      `(gnus-summary-low-read ((,class (:foreground ,cybertron-grey))))
+
+      `(gnus-group-mail-3 ((,class (:foreground ,tron-blue))))
+      `(gnus-group-mail-3-empty ((,class (:foreground ,wipe-out))))
   )
 
   )
