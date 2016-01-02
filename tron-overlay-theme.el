@@ -53,7 +53,8 @@
       (cyan-tron-legacy "#6FC3DF")
       (basestar "#0C141F")
       (sweet-yellow "#FFE64D")
-      
+
+      (tron-grey-1 "#94A9B0")
       (tron-orange-1 "#ff8c00") ;; DarkOrange
       (recogniser-yellow "#FFE64D") ; recogniser yellow 
 
@@ -176,6 +177,8 @@
 
       `(gnus-group-mail-3 ((,class (:foreground ,tron-blue))))
       `(gnus-group-mail-3-empty ((,class (:foreground ,wipe-out-light))))
+
+      `(gnus-summary-high-ancient ((,class (:foreground ,tron-grey-1))))
   )
 
   )
