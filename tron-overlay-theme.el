@@ -180,8 +180,12 @@
 
       `(gnus-summary-high-ancient ((,class (:foreground ,tron-grey-1))))
   )
+ ;; mu4e
+        '(mu4e-flagged-face ((t (:inherit font-lock-function-name-face :foreground "DeepSkyBlue1" :weight bold))))
+        '(mu4e-replied-face ((t (:inherit font-lock-builtin-face :foreground "cornflower blue" :weight normal))))
+        '(mu4e-unread-face ((t (:inherit font-lock-constant-face :foreground "green" :weight bold))))
+        )
 
-  )
 ;;;###autoload
 (when load-file-name
   (add-to-list 'custom-theme-load-path
@@ -196,3 +200,9 @@
 ;; End:
 
 ;;; tron-overlay.el ends here.
+
+
+ ;; '(default ((t (:inherit nil :stipple nil :background "#000000" :foreground "#a3ecd9" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 113 :width normal :foundry "PfEd" :family "DejaVu Sans Mono"))))
+ ;; '(flyspell-incorrect ((t (:background "Background Color" :foreground "deep sky blue" :underline "yellow" :weight bold))))
+ ;; '(isearch ((t (:background "yellow" :foreground "black"))))
+ ;; '(lazy-highlight ((t (:background "#ff1f8b" :foreground "black"))))
